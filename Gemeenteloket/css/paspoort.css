@@ -1,0 +1,133 @@
+ /* Stylesheet */
+ 
+html{
+
+    position:fixed;
+    height: 100%; 
+    width: 100%;
+    overflow: auto; 
+ }
+body{
+    position:fixed;
+    height: 100%; 
+    width: 100%;
+    overflow: auto; 
+    background-color: rgb(253, 253, 255);
+    background-image: url("img/ZoetermeerFoto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* Bovenaan het pagina */
+.header{
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background-color:rgb(95, 112, 189);
+    color: white;
+    background-image: url("img/Logo.jpg");
+    background-repeat: no-repeat;
+    background-position-x:100%;
+}
+
+
+/* Titel */
+.titel{
+
+    text-align: center;
+    
+}
+/* textvak */
+.grid{
+  position: relative;
+  display: grid;
+  background-color: grey;
+  width: 94.4%;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.ttext{
+    text-align: center;
+}
+.text{
+    text-align: center;
+}
+/* Onderaan het pagina*/
+.footer{
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color:rgb(95, 112, 189);
+    color: white;
+    text-align: center;
+}
+
+ /* de side nav menu*/
+.sidebar {
+    
+    width: 95px;
+    background-color: darkblue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    background-color: lightblue;
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: green;
+    color: white;
+  }
+  
+  /* Links mouse hover */
+  .sidebar a:hover:not(.active) {
+    background-color: darkblue;
+    color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
